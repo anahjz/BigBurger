@@ -7,17 +7,19 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class MenuViewController: UITableViewController {
 
     private var foods: NSArray?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getMenu()
     }
     
-    private func getMenu(){
+    private func getMenu() {
+        Helper.getInstance().startLoading()
         let path = "dump/mobiletest1.json"
         Api.shared.getMenu(with: path, { (foods) in
             self.getMenuSuccess(foods: foods)
@@ -26,7 +28,8 @@ class MenuViewController: UITableViewController {
         }
     }
 
-    private func getMenuSuccess(foods: NSArray?){
+    private func getMenuSuccess(foods: NSArray?) {
+        Helper.getInstance().dissmissLoading()
         Helper.getInstance().log(logMessage: "get \(String(describing: foods?.count)) food")
         guard let foods = foods else {
             Helper.getInstance().log(logMessage: "Get menu response is nil")
@@ -39,7 +42,8 @@ class MenuViewController: UITableViewController {
         }
     }
     
-    private func getMenuFailure(error: Error){
+    private func getMenuFailure(error: Error) {
+        Helper.getInstance().errorInLoading()
         Helper.getInstance().log(logMessage: "Failed to load menu : \(error)")
     }
 }

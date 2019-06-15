@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Foundation
+import SVProgressHUD
+
 open class Helper: NSObject
 {
     fileprivate static let instance = Helper()
@@ -17,7 +18,19 @@ open class Helper: NSObject
         return .instance
     }
     
-    @objc func log(logMessage: String, functionName: String = #function) {
+    func log(logMessage: String, functionName: String = #function) {
         print("LOG:: ✔︎\(functionName): \(logMessage)")
+    }
+    
+    func startLoading() {
+        SVProgressHUD.show(withStatus: "PleaseWait")
+    }
+    
+    func errorInLoading() {
+        SVProgressHUD.showError(withStatus: "Error in loading data")
+    }
+    
+    func dissmissLoading() {
+        SVProgressHUD.dismiss()
     }
 }

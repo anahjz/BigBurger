@@ -8,13 +8,21 @@
 
 import UIKit
 import SVProgressHUD
-class MenuViewController: UITableViewController {
+
+protocol ChangeTotalAmount{
+    func getTotalAmount(dec: Bool)
+}
+
+class MenuViewController: UIViewController, UITableViewDataSource, ChangeTotalAmount {
 
     private var foods: NSArray?
-    
+    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var cartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableview.delegate = self
+        self.tableview.dataSource = self
         getMenu()
     }
     
@@ -38,7 +46,7 @@ class MenuViewController: UITableViewController {
         
         DispatchQueue.main.async {
             self.foods = foods
-            self.tableView.reloadData()
+            self.tableview.reloadData()
         }
     }
     
@@ -46,16 +54,32 @@ class MenuViewController: UITableViewController {
         Helper.getInstance().errorInLoading()
         Helper.getInstance().log(logMessage: "Failed to load menu : \(error)")
     }
+    
+    func getTotalAmount(dec:Bool) {
+        let currentAmount = self.cartButton.titleLabel?.text?.digits
+        if dec {
+            self.cartButton.setTitle("Cart : \((Int (currentAmount!) ?? 0) - 1) item", for: .normal)
+        } else {
+            self.cartButton.setTitle("Cart : \((Int (currentAmount!) ?? 0) + 1) item", for: .normal)
+        }
+        
+    }
+    
+    
+    @IBAction func goToCart(_ sender: Any) {
+        self.performSegue(withIdentifier: "showCart", sender: nil)
+    }
 }
 
-extension MenuViewController {
+extension MenuViewController: UITableViewDelegate {
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foods?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! MenuCell
+        cell.delegate = self
         guard let foods = self.foods else {
             return cell
         }
@@ -63,7 +87,16 @@ extension MenuViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 145
+    }
+
+}
+
+
+extension String {
+    var digits: String {
+        return components(separatedBy: CharacterSet.decimalDigits.inverted)
+            .joined()
     }
 }

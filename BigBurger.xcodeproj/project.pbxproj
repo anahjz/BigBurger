@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7353ED4E62E4D37B8B10BDE8 /* Pods_BigBurgerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */; };
 		846374DA22B4D86C009DBFBE /* URL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846374D922B4D86C009DBFBE /* URL.plist */; };
+		846374E022B4EC0E009DBFBE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846374DF22B4EC0E009DBFBE /* Helper.swift */; };
 		848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA84E22B4AE2100A487D2 /* AppDelegate.swift */; };
 		848DA85122B4AE2100A487D2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA85022B4AE2100A487D2 /* MenuViewController.swift */; };
 		848DA85422B4AE2100A487D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DA85222B4AE2100A487D2 /* Main.storyboard */; };

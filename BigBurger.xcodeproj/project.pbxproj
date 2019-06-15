@@ -15,7 +15,7 @@
 		848DA85922B4AE2300A487D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DA85722B4AE2300A487D2 /* LaunchScreen.storyboard */; };
 		848DA86422B4AE2300A487D2 /* BigBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86322B4AE2300A487D2 /* BigBurgerTests.swift */; };
 		848DA86F22B4AE2300A487D2 /* BigBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86E22B4AE2300A487D2 /* BigBurgerUITests.swift */; };
-		848DA87E22B4BD3900A487D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA87D22B4BD3900A487D2 /* Menu.swift */; };
+		848DA87E22B4BD3900A487D2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA87D22B4BD3900A487D2 /* Food.swift */; };
 		848DA88022B4BD5300A487D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA87F22B4BD5300A487D2 /* Alamofire.framework */; };
 		848DA88222B4BD5700A487D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */; };
 		973DA84D0380531E3B7BB452 /* Pods_BigBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */; };
@@ -43,9 +43,12 @@
 		0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurgerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		474BF3BF69D810D76A027B66 /* Pods-BigBurgerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerTests/Pods-BigBurgerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83D667A929D59775F6644A68 /* Pods-BigBurgerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerUITests/Pods-BigBurgerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		846374D922B4D86C009DBFBE /* URL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URL.plist; sourceTree = "<group>"; };
+		846374DC22B4D908009DBFBE /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		846374DF22B4EC0E009DBFBE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		848DA84B22B4AE2100A487D2 /* BigBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA84E22B4AE2100A487D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		848DA85022B4AE2100A487D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		848DA85022B4AE2100A487D2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		848DA85322B4AE2100A487D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848DA85522B4AE2300A487D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848DA85822B4AE2300A487D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +59,10 @@
 		848DA86A22B4AE2300A487D2 /* BigBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA86E22B4AE2300A487D2 /* BigBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBurgerUITests.swift; sourceTree = "<group>"; };
 		848DA87022B4AE2300A487D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848DA87D22B4BD3900A487D2 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		848DA87F22B4BD5300A487D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848DA88722B4CB9E00A487D2 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		982F3AD1B1E93D70BC431764 /* Pods-BigBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger.release.xcconfig"; sourceTree = "<group>"; };
 		A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurgerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +114,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		846374D622B4D812009DBFBE /* supportFile */ = {
+			isa = PBXGroup;
+			children = (
+				848DA85A22B4AE2300A487D2 /* Info.plist */,
+				848DA85522B4AE2300A487D2 /* Assets.xcassets */,
+				846374D922B4D86C009DBFBE /* URL.plist */,
+			);
+			path = supportFile;
+			sourceTree = "<group>";
+		};
+		846374DB22B4D8FA009DBFBE /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				846374DC22B4D908009DBFBE /* Api.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		848DA84222B4AE2100A487D2 = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +157,15 @@
 		848DA84D22B4AE2100A487D2 /* BigBurger */ = {
 			isa = PBXGroup;
 			children = (
+				846374DB22B4D8FA009DBFBE /* APIManager */,
+				846374D622B4D812009DBFBE /* supportFile */,
+				848DA88322B4CB5B00A487D2 /* View */,
 				848DA87C22B4BD1B00A487D2 /* Model */,
 				848DA84E22B4AE2100A487D2 /* AppDelegate.swift */,
-				848DA85022B4AE2100A487D2 /* ViewController.swift */,
+				848DA85022B4AE2100A487D2 /* MenuViewController.swift */,
 				848DA85222B4AE2100A487D2 /* Main.storyboard */,
-				848DA85522B4AE2300A487D2 /* Assets.xcassets */,
 				848DA85722B4AE2300A487D2 /* LaunchScreen.storyboard */,
-				848DA85A22B4AE2300A487D2 /* Info.plist */,
+				846374DF22B4EC0E009DBFBE /* Helper.swift */,
 			);
 			path = BigBurger;
 			sourceTree = "<group>";
@@ -164,9 +191,25 @@
 		848DA87C22B4BD1B00A487D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				848DA87D22B4BD3900A487D2 /* Menu.swift */,
+				848DA87D22B4BD3900A487D2 /* Food.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		848DA88322B4CB5B00A487D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848DA88422B4CB6B00A487D2 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848DA88422B4CB6B00A487D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				848DA88722B4CB9E00A487D2 /* MenuCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B5157D531D95165F314F5750 /* Frameworks */ = {
@@ -296,6 +339,7 @@
 			files = (
 				848DA85922B4AE2300A487D2 /* LaunchScreen.storyboard in Resources */,
 				848DA85622B4AE2300A487D2 /* Assets.xcassets in Resources */,
+				846374DA22B4D86C009DBFBE /* URL.plist in Resources */,
 				848DA85422B4AE2100A487D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,9 +517,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848DA87E22B4BD3900A487D2 /* Menu.swift in Sources */,
-				848DA85122B4AE2100A487D2 /* ViewController.swift in Sources */,
+				848DA87E22B4BD3900A487D2 /* Food.swift in Sources */,
+				846374DD22B4D908009DBFBE /* Api.swift in Sources */,
+				848DA85122B4AE2100A487D2 /* MenuViewController.swift in Sources */,
+				848DA88822B4CB9E00A487D2 /* MenuCell.swift in Sources */,
 				848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */,
+				846374E022B4EC0E009DBFBE /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigBurger/Info.plist;
+				INFOPLIST_FILE = BigBurger/supportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,7 +717,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BigBurger/Info.plist;
+				INFOPLIST_FILE = BigBurger/supportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

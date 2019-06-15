@@ -25,4 +25,16 @@ class Food {
         price = json["price"].intValue
         
     }
+    
+    func priceInLira() -> String {
+        guard let price = self.price else{
+            return "0.0"
+        }
+        let numberStr = "\(Double(price/100) )‎₺‎"
+        return numberStr
+    }
 }
+
+
+
+

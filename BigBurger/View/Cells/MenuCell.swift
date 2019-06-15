@@ -12,23 +12,19 @@ import SDWebImage
 
 class MenuCell: UITableViewCell {
     
+    @IBOutlet weak var countingLabel: UILabel!
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodName: UILabel!
     @IBOutlet weak var foodDescription: UILabel!
     @IBOutlet weak var foodPrice: UILabel!
+    var delegate:ChangeTotalAmount!
     
+    var quantity = 0
+
     var food: Food? {
         didSet {
             updateUI()
         }
-    }
-    
-    
-    override func awakeFromNib() {
-        
-        
-    }
-    override func layoutSubviews() {
     }
     
     private func updateUI(){
@@ -66,5 +62,26 @@ class MenuCell: UITableViewCell {
         updateFoodName()
         updateFoodDescription()
         updateFoodPrice()
+    }
+    
+    @IBAction func decreaseCount(_ sender: Any) {
+        
+        if quantity > 0 {
+            quantity -= 1
+            self.countingLabel.text = String(quantity)
+            self.food?.orderNumber -= 1
+            delegate.getTotalAmount(dec: true)
+        }
+        
+        print(food?.orderNumber ?? 0)
+   
+    }
+    
+    @IBAction func increaseCount(_ sender: Any) {
+            quantity += 1
+            countingLabel.text = String(quantity)
+            self.food?.orderNumber += 1
+        delegate.getTotalAmount(dec: false)
+        print(food?.orderNumber ?? 0)
     }
 }

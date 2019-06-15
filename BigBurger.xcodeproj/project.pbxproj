@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7353ED4E62E4D37B8B10BDE8 /* Pods_BigBurgerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */; };
 		848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA84E22B4AE2100A487D2 /* AppDelegate.swift */; };
 		848DA85122B4AE2100A487D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA85022B4AE2100A487D2 /* ViewController.swift */; };
 		848DA85422B4AE2100A487D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DA85222B4AE2100A487D2 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		848DA85922B4AE2300A487D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DA85722B4AE2300A487D2 /* LaunchScreen.storyboard */; };
 		848DA86422B4AE2300A487D2 /* BigBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86322B4AE2300A487D2 /* BigBurgerTests.swift */; };
 		848DA86F22B4AE2300A487D2 /* BigBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86E22B4AE2300A487D2 /* BigBurgerUITests.swift */; };
+		973DA84D0380531E3B7BB452 /* Pods_BigBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */; };
+		D45B2442462BD1FCACDDCA4F /* Pods_BigBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurgerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		474BF3BF69D810D76A027B66 /* Pods-BigBurgerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerTests/Pods-BigBurgerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83D667A929D59775F6644A68 /* Pods-BigBurgerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerUITests/Pods-BigBurgerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		848DA84B22B4AE2100A487D2 /* BigBurger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBurger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA84E22B4AE2100A487D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848DA85022B4AE2100A487D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		848DA86A22B4AE2300A487D2 /* BigBurgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigBurgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA86E22B4AE2300A487D2 /* BigBurgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBurgerUITests.swift; sourceTree = "<group>"; };
 		848DA87022B4AE2300A487D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982F3AD1B1E93D70BC431764 /* Pods-BigBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger.release.xcconfig"; sourceTree = "<group>"; };
+		A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurgerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90FC571C2549B302E231E9F /* Pods-BigBurgerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerUITests/Pods-BigBurgerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F36AC899A0911278A061225A /* Pods-BigBurger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger.debug.xcconfig"; sourceTree = "<group>"; };
+		FA4C6CA9894F0C97DCF9D7A6 /* Pods-BigBurgerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurgerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurgerTests/Pods-BigBurgerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45B2442462BD1FCACDDCA4F /* Pods_BigBurger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7353ED4E62E4D37B8B10BDE8 /* Pods_BigBurgerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973DA84D0380531E3B7BB452 /* Pods_BigBurgerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795030557680115922734FE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F36AC899A0911278A061225A /* Pods-BigBurger.debug.xcconfig */,
+				982F3AD1B1E93D70BC431764 /* Pods-BigBurger.release.xcconfig */,
+				474BF3BF69D810D76A027B66 /* Pods-BigBurgerTests.debug.xcconfig */,
+				FA4C6CA9894F0C97DCF9D7A6 /* Pods-BigBurgerTests.release.xcconfig */,
+				E90FC571C2549B302E231E9F /* Pods-BigBurgerUITests.debug.xcconfig */,
+				83D667A929D59775F6644A68 /* Pods-BigBurgerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		848DA84222B4AE2100A487D2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				848DA86222B4AE2300A487D2 /* BigBurgerTests */,
 				848DA86D22B4AE2300A487D2 /* BigBurgerUITests */,
 				848DA84C22B4AE2100A487D2 /* Products */,
+				795030557680115922734FE2 /* Pods */,
+				B5157D531D95165F314F5750 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = BigBurgerUITests;
 			sourceTree = "<group>";
 		};
+		B5157D531D95165F314F5750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */,
+				B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */,
+				0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848DA87322B4AE2300A487D2 /* Build configuration list for PBXNativeTarget "BigBurger" */;
 			buildPhases = (
+				463BC7333D065FFA5CBF75E8 /* [CP] Check Pods Manifest.lock */,
 				848DA84722B4AE2100A487D2 /* Sources */,
 				848DA84822B4AE2100A487D2 /* Frameworks */,
 				848DA84922B4AE2100A487D2 /* Resources */,
+				813A0435C04C6FF7DB109BC6 /* [CP] Embed Pods Frameworks */,
+				AF90EE725C709670DE09F267 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848DA87622B4AE2300A487D2 /* Build configuration list for PBXNativeTarget "BigBurgerTests" */;
 			buildPhases = (
+				143E05972C8D839B7C2A043E /* [CP] Check Pods Manifest.lock */,
 				848DA85B22B4AE2300A487D2 /* Sources */,
 				848DA85C22B4AE2300A487D2 /* Frameworks */,
 				848DA85D22B4AE2300A487D2 /* Resources */,
+				C3D79DBCC5B887E068A9970F /* [CP] Embed Pods Frameworks */,
+				1183D3825A36B022BC255B21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848DA87922B4AE2300A487D2 /* Build configuration list for PBXNativeTarget "BigBurgerUITests" */;
 			buildPhases = (
+				26E5EA5B765FA4878390F472 /* [CP] Check Pods Manifest.lock */,
 				848DA86622B4AE2300A487D2 /* Sources */,
 				848DA86722B4AE2300A487D2 /* Frameworks */,
 				848DA86822B4AE2300A487D2 /* Resources */,
+				8400EF3B2EFB555168E22A4B /* [CP] Embed Pods Frameworks */,
+				F67A5DBEE60BD9115EE91BEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +299,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1183D3825A36B022BC255B21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurgerTests/Pods-BigBurgerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		143E05972C8D839B7C2A043E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigBurgerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E5EA5B765FA4878390F472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigBurgerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		463BC7333D065FFA5CBF75E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigBurger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813A0435C04C6FF7DB109BC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8400EF3B2EFB555168E22A4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurgerUITests/Pods-BigBurgerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF90EE725C709670DE09F267 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3D79DBCC5B887E068A9970F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurgerTests/Pods-BigBurgerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67A5DBEE60BD9115EE91BEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBurgerUITests/Pods-BigBurgerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		848DA84722B4AE2100A487D2 /* Sources */ = {
@@ -430,14 +631,12 @@
 		};
 		848DA87422B4AE2300A487D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36AC899A0911278A061225A /* Pods-BigBurger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -447,14 +646,12 @@
 		};
 		848DA87522B4AE2300A487D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982F3AD1B1E93D70BC431764 /* Pods-BigBurger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -464,16 +661,13 @@
 		};
 		848DA87722B4AE2300A487D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474BF3BF69D810D76A027B66 /* Pods-BigBurgerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -484,16 +678,13 @@
 		};
 		848DA87822B4AE2300A487D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4C6CA9894F0C97DCF9D7A6 /* Pods-BigBurgerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -504,15 +695,12 @@
 		};
 		848DA87A22B4AE2300A487D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90FC571C2549B302E231E9F /* Pods-BigBurgerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -523,15 +711,12 @@
 		};
 		848DA87B22B4AE2300A487D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D667A929D59775F6644A68 /* Pods-BigBurgerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

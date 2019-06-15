@@ -15,7 +15,7 @@ class Food {
     var description: String?
     var image: String?
     var price: Int?
-    
+    var orderNumber: Int = 0
     
     init(json: JSON){
         ref = json["ref"].string

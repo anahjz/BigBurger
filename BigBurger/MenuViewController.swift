@@ -62,4 +62,8 @@ extension MenuViewController {
         cell.food = foods[indexPath.row] as? Food
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
 }

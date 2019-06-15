@@ -37,46 +37,47 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="140" id="5aA-xB-zee" customClass="MenuCell" customModule="BigBurger" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aA-xB-zee" id="Gnu-gm-HB7">
+                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5aA-xB-zee" id="Gnu-gm-HB7">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KrK-hw-mWU">
-                                            <rect key="frame" x="6" y="15" width="110" height="110"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KrK-hw-mWU">
+                                            <rect key="frame" x="248" y="16" width="108" height="108"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="KrK-hw-mWU" secondAttribute="height" multiplier="1:1" id="tz7-ZS-icX"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OE7-cz-N85">
-                                            <rect key="frame" x="128" y="27" width="39" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OE7-cz-N85">
+                                            <rect key="frame" x="12" y="16" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvy-Cm-Ypk">
-                                            <rect key="frame" x="128" y="52" width="242" height="16.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvy-Cm-Ypk">
+                                            <rect key="frame" x="12" y="20.5" width="231" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-Ft-KOL">
-                                            <rect key="frame" x="128" y="76.5" width="39" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-Ft-KOL">
+                                            <rect key="frame" x="12" y="24.5" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="KrK-hw-mWU" secondAttribute="bottom" constant="14.5" id="0GM-Mq-F23"/>
-                                        <constraint firstItem="OE7-cz-N85" firstAttribute="top" secondItem="Gnu-gm-HB7" secondAttribute="topMargin" constant="16" id="Hiy-ly-myL"/>
-                                        <constraint firstItem="KgO-Ft-KOL" firstAttribute="top" secondItem="gvy-Cm-Ypk" secondAttribute="bottom" constant="8" id="Jm3-aB-KhP"/>
-                                        <constraint firstItem="OE7-cz-N85" firstAttribute="leading" secondItem="KrK-hw-mWU" secondAttribute="trailing" constant="12" id="Jy5-aA-bev"/>
-                                        <constraint firstAttribute="trailing" secondItem="gvy-Cm-Ypk" secondAttribute="trailing" constant="5" id="NhR-2Y-RLZ"/>
-                                        <constraint firstItem="KgO-Ft-KOL" firstAttribute="leading" secondItem="KrK-hw-mWU" secondAttribute="trailing" constant="12" id="Rlf-lg-lKc"/>
-                                        <constraint firstItem="KrK-hw-mWU" firstAttribute="top" secondItem="Gnu-gm-HB7" secondAttribute="top" constant="15" id="aXv-4u-Znp"/>
-                                        <constraint firstItem="gvy-Cm-Ypk" firstAttribute="top" secondItem="OE7-cz-N85" secondAttribute="bottom" constant="5" id="gjO-mA-rru"/>
-                                        <constraint firstItem="KrK-hw-mWU" firstAttribute="leading" secondItem="Gnu-gm-HB7" secondAttribute="leading" constant="6" id="uaH-WN-yVN"/>
-                                        <constraint firstItem="gvy-Cm-Ypk" firstAttribute="leading" secondItem="KrK-hw-mWU" secondAttribute="trailing" constant="12" id="x5z-b0-bPM"/>
+                                        <constraint firstItem="KgO-Ft-KOL" firstAttribute="top" secondItem="gvy-Cm-Ypk" secondAttribute="bottom" constant="4" id="0iZ-4o-euR"/>
+                                        <constraint firstItem="OE7-cz-N85" firstAttribute="top" secondItem="Gnu-gm-HB7" secondAttribute="top" constant="16" id="5LG-mY-WSK"/>
+                                        <constraint firstItem="KrK-hw-mWU" firstAttribute="top" secondItem="Gnu-gm-HB7" secondAttribute="topMargin" constant="5" id="DWa-fl-OrD"/>
+                                        <constraint firstItem="gvy-Cm-Ypk" firstAttribute="leading" secondItem="Gnu-gm-HB7" secondAttribute="leading" constant="12" id="Gge-yh-79Q"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KrK-hw-mWU" secondAttribute="bottom" constant="5" id="LPc-Dq-k4S"/>
+                                        <constraint firstItem="KgO-Ft-KOL" firstAttribute="leading" secondItem="Gnu-gm-HB7" secondAttribute="leading" constant="12" id="OaY-wi-xbZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KrK-hw-mWU" secondAttribute="trailing" constant="3" id="bUs-UH-4Tz"/>
+                                        <constraint firstItem="OE7-cz-N85" firstAttribute="leading" secondItem="Gnu-gm-HB7" secondAttribute="leading" constant="12" id="h9c-fm-ZIT"/>
+                                        <constraint firstItem="KrK-hw-mWU" firstAttribute="leading" secondItem="gvy-Cm-Ypk" secondAttribute="trailing" constant="5" id="t8N-nI-Aej"/>
+                                        <constraint firstItem="gvy-Cm-Ypk" firstAttribute="top" secondItem="OE7-cz-N85" secondAttribute="bottom" constant="4.5" id="v4P-6v-iPj"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

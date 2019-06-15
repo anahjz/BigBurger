@@ -15,6 +15,9 @@
 		848DA85922B4AE2300A487D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848DA85722B4AE2300A487D2 /* LaunchScreen.storyboard */; };
 		848DA86422B4AE2300A487D2 /* BigBurgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86322B4AE2300A487D2 /* BigBurgerTests.swift */; };
 		848DA86F22B4AE2300A487D2 /* BigBurgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA86E22B4AE2300A487D2 /* BigBurgerUITests.swift */; };
+		848DA87E22B4BD3900A487D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA87D22B4BD3900A487D2 /* Menu.swift */; };
+		848DA88022B4BD5300A487D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA87F22B4BD5300A487D2 /* Alamofire.framework */; };
+		848DA88222B4BD5700A487D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */; };
 		973DA84D0380531E3B7BB452 /* Pods_BigBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */; };
 		D45B2442462BD1FCACDDCA4F /* Pods_BigBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848DA88222B4BD5700A487D2 /* SwiftyJSON.framework in Frameworks */,
+				848DA88022B4BD5300A487D2 /* Alamofire.framework in Frameworks */,
 				D45B2442462BD1FCACDDCA4F /* Pods_BigBurger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +132,7 @@
 		848DA84D22B4AE2100A487D2 /* BigBurger */ = {
 			isa = PBXGroup;
 			children = (
+				848DA87C22B4BD1B00A487D2 /* Model */,
 				848DA84E22B4AE2100A487D2 /* AppDelegate.swift */,
 				848DA85022B4AE2100A487D2 /* ViewController.swift */,
 				848DA85222B4AE2100A487D2 /* Main.storyboard */,
@@ -155,9 +161,19 @@
 			path = BigBurgerUITests;
 			sourceTree = "<group>";
 		};
+		848DA87C22B4BD1B00A487D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848DA87D22B4BD3900A487D2 /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B5157D531D95165F314F5750 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */,
+				848DA87F22B4BD5300A487D2 /* Alamofire.framework */,
 				A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */,
 				B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */,
 				0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */,
@@ -457,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848DA87E22B4BD3900A487D2 /* Menu.swift in Sources */,
 				848DA85122B4AE2100A487D2 /* ViewController.swift in Sources */,
 				848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */,
 			);
@@ -636,7 +653,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -651,7 +671,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurger/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -667,7 +690,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -684,7 +711,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -700,7 +731,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -716,7 +751,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

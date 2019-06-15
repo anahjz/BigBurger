@@ -6,7 +6,7 @@ target 'BigBurger' do
   # Pods for BigBurger
 
     pod 'Alamofire'
-    pod 'SwiftyJSON'
+    pod 'SwiftyJSON', '~> 3.0'
 
   target 'BigBurgerTests' do
     inherit! :search_paths

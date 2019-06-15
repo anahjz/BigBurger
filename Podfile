@@ -7,6 +7,8 @@ target 'BigBurger' do
 
     pod 'Alamofire'
     pod 'SwiftyJSON', '~> 3.0'
+    pod 'SVProgressHUD', '~> 2.2'
+    pod 'SDWebImage', '~> 5.0'
 
   target 'BigBurgerTests' do
     inherit! :search_paths

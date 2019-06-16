@@ -27,6 +27,12 @@ class MenuCell: UITableViewCell {
         }
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.countingLabel.text = nil
+    }
+    
+    
     private func updateUI(){
         
         func updateFoodImage(){
@@ -58,10 +64,18 @@ class MenuCell: UITableViewCell {
             self.foodPrice.text = price
         }
         
+        func updateCountingLabel() {
+            guard let orderNumber = food?.orderNumber else {
+                return self.countingLabel.text = "0"
+            }
+            self.countingLabel.text = String(orderNumber)
+        }
+        
         updateFoodImage()
         updateFoodName()
         updateFoodDescription()
         updateFoodPrice()
+        updateCountingLabel()
     }
     
     @IBAction func decreaseCount(_ sender: Any) {
@@ -72,16 +86,12 @@ class MenuCell: UITableViewCell {
             self.food?.orderNumber -= 1
             delegate.getTotalAmount(dec: true)
         }
-        
-        print(food?.orderNumber ?? 0)
-   
     }
     
     @IBAction func increaseCount(_ sender: Any) {
             quantity += 1
             countingLabel.text = String(quantity)
             self.food?.orderNumber += 1
-        delegate.getTotalAmount(dec: false)
-        print(food?.orderNumber ?? 0)
+            delegate.getTotalAmount(dec: false)
     }
 }

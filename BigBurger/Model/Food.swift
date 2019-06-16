@@ -33,6 +33,15 @@ class Food {
         let numberStr = "\(Double(price/100) )‎₺‎"
         return numberStr
     }
+    
+    func totalOrdredFoodPrice() -> String {
+        //This method return total price of a food that ordered.price is price of food and order number is number of ordered of this food in current cart.
+        guard let price = self.price else{
+            return "0.0"
+        }
+        let numberStr = "\(Double(price/100) * Double (self.orderNumber) )‎₺‎"
+        return numberStr
+    }
 }
 
 

@@ -22,6 +22,9 @@
 		848DA88022B4BD5300A487D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA87F22B4BD5300A487D2 /* Alamofire.framework */; };
 		848DA88222B4BD5700A487D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */; };
 		848DA88822B4CB9E00A487D2 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA88722B4CB9E00A487D2 /* MenuCell.swift */; };
+		84BF71CC22B5F5AE00B334E5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF71CB22B5F5AE00B334E5 /* CartViewController.swift */; };
+		84BF71CE22B5F96800B334E5 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF71CD22B5F96800B334E5 /* Cart.swift */; };
+		84BF71D022B5FE0600B334E5 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF71CF22B5FE0600B334E5 /* CartCell.swift */; };
 		973DA84D0380531E3B7BB452 /* Pods_BigBurgerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F148C894CDA06768D56605D /* Pods_BigBurgerUITests.framework */; };
 		D45B2442462BD1FCACDDCA4F /* Pods_BigBurger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */; };
 /* End PBXBuildFile section */

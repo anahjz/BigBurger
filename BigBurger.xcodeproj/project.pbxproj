@@ -220,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				848DA88722B4CB9E00A487D2 /* MenuCell.swift */,
+				84BF71CF22B5FE0600B334E5 /* CartCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -540,6 +541,7 @@
 				848DA88822B4CB9E00A487D2 /* MenuCell.swift in Sources */,
 				848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */,
 				846374E022B4EC0E009DBFBE /* Helper.swift in Sources */,
+				84BF71D022B5FE0600B334E5 /* CartCell.swift in Sources */,
 				84BF71CE22B5F96800B334E5 /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -816,7 +818,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BigBurgerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vibuy.BigBurger.BigBurgerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

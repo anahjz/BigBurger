@@ -70,6 +70,9 @@
 		848DA87F22B4BD5300A487D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA88122B4BD5700A487D2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DA88722B4CB9E00A487D2 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		84BF71CB22B5F5AE00B334E5 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		84BF71CD22B5F96800B334E5 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		84BF71CF22B5FE0600B334E5 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		982F3AD1B1E93D70BC431764 /* Pods-BigBurger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBurger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBurger/Pods-BigBurger.release.xcconfig"; sourceTree = "<group>"; };
 		A9E22F30C36B07097F2041B7 /* Pods_BigBurger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B2B35792C297A08851F49B /* Pods_BigBurgerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBurgerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,7 @@
 				848DA85222B4AE2100A487D2 /* Main.storyboard */,
 				848DA85722B4AE2300A487D2 /* LaunchScreen.storyboard */,
 				846374DF22B4EC0E009DBFBE /* Helper.swift */,
+				84BF71CB22B5F5AE00B334E5 /* CartViewController.swift */,
 			);
 			path = BigBurger;
 			sourceTree = "<group>";
@@ -531,6 +535,7 @@
 			files = (
 				848DA87E22B4BD3900A487D2 /* Food.swift in Sources */,
 				846374DD22B4D908009DBFBE /* Api.swift in Sources */,
+				84BF71CC22B5F5AE00B334E5 /* CartViewController.swift in Sources */,
 				848DA85122B4AE2100A487D2 /* MenuViewController.swift in Sources */,
 				848DA88822B4CB9E00A487D2 /* MenuCell.swift in Sources */,
 				848DA84F22B4AE2100A487D2 /* AppDelegate.swift in Sources */,

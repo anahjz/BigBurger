@@ -173,22 +173,64 @@
             </objects>
             <point key="canvasLocation" x="-282.39999999999998" y="-98.50074962518741"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="R2c-YF-KK1">
             <objects>
-                <tableViewController id="zwU-mf-hn0" sceneMemberID="viewController">
+                <tableViewController id="zwU-mf-hn0" customClass="CartViewController" customModule="BigBurger" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DVw-8S-cHK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ifH-OZ-Ho5">
+                            <rect key="frame" x="0.0" y="80" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qa5-9o-Hbm">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartItemCell" rowHeight="52" id="qa5-9o-Hbm" customClass="CartCell" customModule="BigBurger" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qa5-9o-Hbm" id="Cu8-Mh-u2J">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97T-Fh-4wk">
+                                            <rect key="frame" x="16" y="18.5" width="30" height="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-qG-8Ve">
+                                            <rect key="frame" x="329" y="18.5" width="30" height="15"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfu-GC-IbU">
+                                            <rect key="frame" x="54" y="17" width="34.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="97T-Fh-4wk" firstAttribute="leading" secondItem="Cu8-Mh-u2J" secondAttribute="leadingMargin" id="3bf-4P-D9f"/>
+                                        <constraint firstItem="Qfu-GC-IbU" firstAttribute="leading" secondItem="97T-Fh-4wk" secondAttribute="trailing" constant="8" id="Yck-50-Vqa"/>
+                                        <constraint firstItem="NQV-qG-8Ve" firstAttribute="trailing" secondItem="Cu8-Mh-u2J" secondAttribute="trailingMargin" id="i8k-6K-hOG"/>
+                                        <constraint firstItem="NQV-qG-8Ve" firstAttribute="centerY" secondItem="Cu8-Mh-u2J" secondAttribute="centerY" id="wnq-5i-kQg"/>
+                                        <constraint firstItem="Qfu-GC-IbU" firstAttribute="centerY" secondItem="Cu8-Mh-u2J" secondAttribute="centerY" id="xL1-Po-aU3"/>
+                                        <constraint firstItem="97T-Fh-4wk" firstAttribute="centerY" secondItem="Cu8-Mh-u2J" secondAttribute="centerY" id="zns-0i-Ftd"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Qfu-GC-IbU" id="0Q0-1X-xNz"/>
+                                    <outlet property="orderNumberLabel" destination="97T-Fh-4wk" id="G0n-gS-Sgg"/>
+                                    <outlet property="priceLabel" destination="NQV-qG-8Ve" id="dmH-Kp-LOk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -196,10 +238,13 @@
                             <outlet property="delegate" destination="zwU-mf-hn0" id="hy1-se-t1e"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="totalLabel" destination="ifH-OZ-Ho5" id="aCA-of-Z5e"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FaA-xY-yPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="-99"/>
+            <point key="canvasLocation" x="413.60000000000002" y="-99.400299850074973"/>
         </scene>
     </scenes>
 </document>

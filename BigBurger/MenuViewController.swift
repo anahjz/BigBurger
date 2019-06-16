@@ -19,6 +19,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, ChangeTotalAm
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var cartButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableview.delegate = self
@@ -62,14 +63,24 @@ class MenuViewController: UIViewController, UITableViewDataSource, ChangeTotalAm
         } else {
             self.cartButton.setTitle("Cart : \((Int (currentAmount!) ?? 0) + 1) item", for: .normal)
         }
-        
     }
     
+    fileprivate func getOrderedFood()-> [Food] {
+        var cartOrder = [Food] ()
+        for food in foods! {
+            if (food as! Food).orderNumber > 0 {
+                cartOrder.append(food as! Food)
+            }
+        }
+        return cartOrder
+    }
     
     @IBAction func goToCart(_ sender: Any) {
         self.performSegue(withIdentifier: "showCart", sender: nil)
+        Cart.currentCart.items.append(contentsOf: getOrderedFood())
+        }
     }
-}
+
 
 extension MenuViewController: UITableViewDelegate {
     
